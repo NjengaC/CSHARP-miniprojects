@@ -1,0 +1,14 @@
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.GeneratedMSBuildEditorConfig.editorconfig
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.AssemblyInfoInputs.cache
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.AssemblyInfo.cs
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.csproj.CoreCompileInputs.cache
+/home/njenga/Compositions/bin/Debug/net7.0/Compositions
+/home/njenga/Compositions/bin/Debug/net7.0/Compositions.deps.json
+/home/njenga/Compositions/bin/Debug/net7.0/Compositions.runtimeconfig.json
+/home/njenga/Compositions/bin/Debug/net7.0/Compositions.dll
+/home/njenga/Compositions/bin/Debug/net7.0/Compositions.pdb
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.dll
+/home/njenga/Compositions/obj/Debug/net7.0/refint/Compositions.dll
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.pdb
+/home/njenga/Compositions/obj/Debug/net7.0/Compositions.genruntimeconfig.cache
+/home/njenga/Compositions/obj/Debug/net7.0/ref/Compositions.dll

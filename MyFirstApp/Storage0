@@ -1,0 +1,133 @@
+﻿using System;
+
+namespace MyFirstApp
+{
+    internal class Program
+    {
+        static  void Main(string[] args)
+        {
+            VariablesDemo demo = new VariablesDemo();
+            demo.ShowVariables();
+
+            Console.WriteLine("Next lets check number...");
+            demo.CheckOdd();
+            Console.WriteLine("Time for loop fun...");
+            demo.LoopFun();
+            Console.WriteLine("Fun with days of the week!");
+            demo.SwitchFun();
+            Console.WriteLine("Now, lets perform some maths operations...");
+            PerformMathOperations();
+            Console.WriteLine("Finally, let's manage a bank account...");
+            ManageBankAccount();
+            Console.WriteLine("Presss any key to quit");
+            Console.ReadKey();
+        }
+
+        static void PerformMathOperations()
+        {
+            try
+            {
+                Console.Write("Enter First Number: ");
+                int num1 = GetValidInteger();
+
+                Console.Write("Enter second Number: ");
+                int num2 = GetValidInteger();
+
+                MathOperations mathOps = new MathOperations(num1, num2);
+
+                Console.WriteLine($"Sum: {mathOps.Add()}");
+                Console.WriteLine($"Difference: {mathOps.Subtract()}");
+                Console.WriteLine($"Product: {mathOps.Multiply()}");
+                Console.WriteLine($"Quotient: {mathOps.Divide()}");
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        static int GetValidInteger()
+        {
+            while (true)
+            {
+                string? input = Console.ReadLine();
+                if (int.TryParse(input, out int number))
+                {
+                    return number;
+                }
+                Console.Write("Invalid input. Please enter a valid int: ");
+            }
+        }
+
+        static void ManageBankAccount()
+        {
+            Console.Write("Would you like to create a bank acoount? (yes/no): ");
+            string? response = Console.ReadLine()?.ToLower();
+
+            BankAccount account = new BankAccount(0);
+
+            if (response == "yes" || response == "y")
+            {
+                Console.Write("Enter initial deposit amount: ");
+                decimal initialDeposit = GetValidDecimal();
+                account = new BankAccount(initialDeposit);
+                Console.WriteLine("Bank account created successfully!");
+            }
+            else
+                Console.WriteLine("Thank you for contacting us, come back anytime");
+            
+            bool continueBanking = true;
+
+            while (continueBanking)
+            {
+                Console.WriteLine("\nChoose an action:");
+                Console.WriteLine("1. Deposit");
+                Console.WriteLine("2. Withdraw");
+                Console.WriteLine("3. View Balance");
+                Console.WriteLine("4. Exit Bank account management");
+                Console.WriteLine("Enter your choice (1-4): ");
+
+                string? choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        Console.Write("Enter Amount to deposit: ");
+                        decimal depositAmount = GetValidDecimal();
+                        account.Deposit(depositAmount);
+                        break;
+
+                    case "2":
+                        Console.Write("Enter amount to withdraw: ");
+                        decimal withdrawAmount = GetValidDecimal();
+                        account.Withdraw(withdrawAmount);
+                        break;
+                    case "3":
+                        account.DisplayBalance();
+                        break;
+                    case "4":
+                        continueBanking = false;
+                        Console.Write("Exiting...");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. please select again");
+                        break;
+                }
+            }
+        }
+
+        static decimal GetValidDecimal()
+        {
+            while (true)
+            {
+                string? input = Console.ReadLine();
+                if (decimal.TryParse(input, out decimal number))
+                {
+                    return number;
+                }
+                Console.Write("Invalid input. Please enter a valid decimal number: ");
+            }
+        }
+                        
+    }
+}
