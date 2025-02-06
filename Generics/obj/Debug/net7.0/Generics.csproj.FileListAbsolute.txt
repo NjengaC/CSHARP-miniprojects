@@ -1,0 +1,14 @@
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.GeneratedMSBuildEditorConfig.editorconfig
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.AssemblyInfoInputs.cache
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.AssemblyInfo.cs
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.csproj.CoreCompileInputs.cache
+/home/njenga/CSHARP-miniprojects/Generics/bin/Debug/net7.0/Generics
+/home/njenga/CSHARP-miniprojects/Generics/bin/Debug/net7.0/Generics.deps.json
+/home/njenga/CSHARP-miniprojects/Generics/bin/Debug/net7.0/Generics.runtimeconfig.json
+/home/njenga/CSHARP-miniprojects/Generics/bin/Debug/net7.0/Generics.dll
+/home/njenga/CSHARP-miniprojects/Generics/bin/Debug/net7.0/Generics.pdb
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.dll
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/refint/Generics.dll
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.pdb
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/Generics.genruntimeconfig.cache
+/home/njenga/CSHARP-miniprojects/Generics/obj/Debug/net7.0/ref/Generics.dll
